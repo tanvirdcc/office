@@ -6,14 +6,16 @@
       /* CSS styles */
       body {
         font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
+        margin: 10;
+        padding: 10;
       }
       header {
-        background-color: #333;
+        background-color: black;
         color: #fff;
-        padding: 20px;
+        padding: 40px;
+        font-size: 36px;
         text-align: center;
+        background-image: url('https://www.w3schools.com/w3images/map.jpg');
       }
       nav {
         background-color: #f2f2f2;
@@ -22,7 +24,7 @@
         padding: 10px;
       }
       nav a {
-        color: #333;
+        color: red;
         text-decoration: none;
         padding: 10px;
       }
@@ -37,7 +39,7 @@
         padding: 20px;
       }
       article {
-        background-color: #f2f2f2;
+        background-color: white;
         border-radius: 5px;
         box-shadow: 0 0 5px #ccc;
         margin-bottom: 20px;
@@ -56,7 +58,7 @@
         background-color: #333;
         color: #fff;
         padding: 20px;
-        text-align: center;
+        text-align: left;
       }
       #map {
         width: 100%;
@@ -64,6 +66,38 @@
         background-image: url('https://www.w3schools.com/w3images/map.jpg');
         background-size: cover;
         background-position: center;
+      }
+
+      /* Media queries for mobile devices */
+      @media only screen and (max-width: 600px) {
+        header {
+          font-size: 24px;
+          padding: 20px;
+        }
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav a {
+          display: block;
+          padding: 5px;
+        }
+        section {
+          flex-direction: column;
+          align-items: center;
+        }
+        article {
+          width: 90%;
+        }
+        article h2 {
+          font-size: 20px;
+        }
+        article p {
+          font-size: 14px;
+        }
+        #map {
+          height: 200px;
+        }
       }
     </style>
   </head>
@@ -73,19 +107,18 @@
     </header>
     <nav>
       <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">Home</a>
-	  <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">About Us</a>
-	  <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">Services</a>
-	  <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">Contact Us</a>
-      </nav>
+      <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">About Us</a>
+      <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">Services</a>
+      <a href="#" style="font-weight: bold; font-size: 25px; color: blue;">Contact Us</a>
+    </nav>
     <section>
       <article id="about">
         <h2>About Us</h2>
         <p>We are a MS Engineering Solution that provides a wide range of services to clients in various industries. Our team of experienced professionals is dedicated to delivering high-quality solutions that meet the unique needs of each project.</p>
         <p>At our core, we believe in sustainability, innovation, and collaboration. We strive to create infrastructure that not only meets the needs of today but also prepares for the challenges of tomorrow.</p>
-      <h2>Dhaka City Map</h2>
-	  <img src="c.png" alt="Civil engineering image" width="450" height="600">
-
-	  </article>
+        <h2>Dhaka City Map</h2>
+        <img src="c.png" alt="Civil engineering image" width="450" height="600">
+      </article>
       <article id="services">
         <h2>Our Services</h2>
         <ul>
@@ -146,7 +179,7 @@
         <p>Email: <a href="msengineeringsolutiondhaka@gmail.com">nbonhy@gmail.com</a><br>Phone: (880) 1712-796261</p>
         <h3>Customer Support:</h3>
         <p>Email: <a href="msengineeringsolutiondhaka@gmail.com">nbonhy@gmail.com</a><br>Phone: (880) 1712-796261</p>
-        <h3>Bussiness Development:</h3>
+        <h3>Business Development:</h3>
         <p>Email: <a href="msengineeringsolutiondhaka@gmail.com">nbonhy@gmail.com</a><br>Phone: (880) 1712-796261</p>
         <h3>Hours:</h3>
         <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
